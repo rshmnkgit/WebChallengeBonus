@@ -1,6 +1,7 @@
 <!-- =========================================================================================== -->
-<!--                                   TREATMENTS PAGE                                              -->
+<!--                                   COMPARISON PAGE                                           -->
 <!-- =========================================================================================== -->
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -35,47 +36,103 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="mousestudy_data.html">Data</a>
-            </li>
-            <li class="nav-item">
+            </li>            <li class="nav-item">
                 <a class="nav-link" href="comparison.html">Analysis Summary</a>
             </li>
         </ul>
     </div>
   </nav>
-  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 
 
-<div class="container" id="index-container">
-    <div class="row"  id="setup-row">
-        <div class="col-lg-7" class="left-box" id="main-box">
-                <h1>Treatments</h1>
-                <hr><br>
-                <img id="img-subpg" src="assets/bar_chart.png">                
-                <p>Different batches of mice were treated with different drug regimens. During this study,
-                more number of mice were treated with Capomulin and Ramicane.</p>
-        </div>
+<div class="container" id="container-box">
+    <!-- ===========  Page Heading    ========================================================= -->
+    <div class="row" id="heading">
+        <h1>Tumor Treatment Study</h1>
+    </div>
 
-        <div class="col-lg-5" id="right-box">
-            <!-- <div class="col-md-12" id="side-box"> -->
-                <div id="side-box">
-                    <h2>Visualizations</h2>
-                    <hr>
-                    <a href="treatments.html"><img class="img-visual" src="assets/bar_chart.png"></a>
-                    <a href="capomulin.html"><img class="img-visual" src="assets/capomulin.png"></a>
-                    <a href="tvolume.html"><img class="img-visual" src="assets/scatterplot.png"></a>
-                    <a href="boxplots.html"><img class="img-visual" src="assets/boxplots.png"></a>
-                </div>
-            <!-- </div>             -->
+    <!-- ===========  Horizontal Line   ===================================================== -->
+    <div class="row">
+        <div class="col-md-12">
+            <hr>
         </div>
     </div>
 
-    <!-- ============   Blank Rows  ===========================================-->
-    <div class="row"  id="setup-row">
-        <div class="col-md-12 p-2">
+    <!-- ============    The text   ========================================================= -->
+    <div class="row">
+        <div class="col-md-12">
+            <p class="txtline">Click any plot to get an in-depth analysis</p>
+            <br>
         </div>
     </div>
-</div>
 
+    <!-- ==============    Fist row of images   ============================================= -->
+    <div class="row" id="first-row">
+        <!-- ==========  Column Left   ======================  -->
+        <div class="col-md-6" id="img-row11">
+            <!-- ======  Image Heading   ==================== -->
+            <div class="d-flex justify-content-center">
+                <h2>Treatments</h2>
+            </div>
+            <!-- ======  Image Display ====================== -->
+            <a href="treatments.html">
+                <img src="assets/bar_chart.png" class = "img-responsive" width = "100%">
+            </a>
+        </div>
+
+        <!-- ========  Column Right ====================== -->
+        <div class="col-sm-6" id="img-row12">
+            <!-- ======  Image Heading   ==================== -->
+            <div class="d-flex justify-content-center">
+                <h2>Capomulin</h2>
+            </div>    
+            <!-- ======  Image Display ====================== -->
+            <a href="capomulin.html">
+                <img src="assets/capomulin.png" class = "img-responsive" width = "100%" >
+            </a>
+        </div>    
+    </div>
+
+    <!-- ==============    Blank Row   ============================================= -->
+    <div class="row">
+        <div class="col-md-12">
+            <br><br>
+        </div>
+    </div>
+
+
+    <!-- ==============    Second row of images   ============================================= -->
+    <div class="row" id="second-row">
+        <!-- ==========  Column Left   ======================  -->
+        <div class="col-md-6" id="img-row21">
+            <!-- ======  Image Heading   ==================== -->
+            <div class="d-flex justify-content-center">
+                <h2>Weight vs Volume</h2>
+            </div>
+            <!-- ======  Image Display ====================== -->
+            <a href="tvolume.html">
+                <img src="assets/scatterplot.png" class = "img-responsive" width = "100%">
+            </a>
+        </div>
+
+        <!-- ========  Column Right ====================== -->
+        <div class="col-sm-6" id="img-row22">
+            <!-- ======  Image Heading   ==================== -->
+            <div class="d-flex justify-content-center">
+                <h2>Box Plots</h2>
+            </div>    
+            <!-- ======  Image Display ====================== -->
+            <a href="boxplots.html">
+                <img src="assets/boxplots.png" class = "img-responsive" width = "100%" >
+            </a>
+            <br><br>
+        </div>     
+    </div>
+    <div class="row" id="blank-row">
+        <div class="mb-3">
+            
+        </div>
+    </div>
     <!-- =========================================================================== -->
     <!--                                FOOTER                                       -->
     <!-- =========================================================================== -->
@@ -84,12 +141,13 @@
         </div>
             <span id="foot-note">Copyright: Data Visualization Bootcamp 2020</span>
     </div>
-    
+
+
     <!-- ======================   Import Bootstrap Javascript   ============================================================ -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <!-- =================================================================================================================== -->
-    </body>
 
+    </body>
 </html>

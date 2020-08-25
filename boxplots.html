@@ -1,5 +1,5 @@
 <!-- =========================================================================================== -->
-<!--                                   LANDING PAGE                                              -->
+<!--                                   CAPOMULIN TREATMENTS PAGE                                              -->
 <!-- =========================================================================================== -->
 <!DOCTYPE html>
 <html lang="en">
@@ -7,10 +7,7 @@
         <meta charset="UTF-8">
         <!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
-        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>         -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <title>Mouse Study Visualization</title>
     </head>
@@ -19,34 +16,6 @@
 <!-- =========================================================================================== -->
 <!--                                   MENU BAR                                                  -->
 <!-- =========================================================================================== -->
-<!-- <nav class="navbar navbar-expand-sm navbar-light bg-light">
-    <a class="navbar-brand" href="index.html" id="homebtn">Latitude</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Plots
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="temperature.html">Max Temperature</a>
-                <a class="dropdown-item" href="humidity.html">Humidity</a>
-                <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-                <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
-            </div>
-          </li>  
-        <li class="nav-item">
-            <a class="nav-link" href="comparison.html">Comparison</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="city_data.html">Data</a>
-        </li>
-      </ul>
-    </div>
-  </nav> -->
-<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="index.html" id="homebtn">Mouse Study</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
@@ -65,10 +34,8 @@
                 </div>
             </li>
             <li class="nav-item">
-                <!-- <a class="nav-link" href="mousestudy_data.html"><span class="glyphicon glyphicon-stats" style = "color : #25030a"></span>Data</a> -->
                 <a class="nav-link" href="mousestudy_data.html">Data</a>
-            </li>
-            <li class="nav-item">
+            </li>            <li class="nav-item">
                 <a class="nav-link" href="comparison.html">Analysis Summary</a>
             </li>
         </ul>
@@ -80,19 +47,13 @@
 <div class="container" id="index-container">
     <div class="row"  id="setup-row">
         <div class="col-lg-7" class="left-box" id="main-box">
-                <h1>Animal Study</h1>
+                <h1>Box Plots</h1>
                 <hr><br>
-                <img id="img-landpg" src="assets/bar_chart.png">                
-                <p>Pymaceuticals Inc., is a burgeoning pharmaceutical company based out of San Diego. 
-                Pymaceuticals specializes in anti-cancer pharmaceuticals. In its most recent efforts, 
-                it began screening for potential treatments for squamous cell carcinoma (SCC), a 
-                commonly occurring form of skin cancer.</p>
-                <p>This project is an analysis based on the complete data from their most recent animal study. 
-                In this study, 249 mice identified with SCC tumor growth 
-                were treated through a variety of 
-                drug regimens. Over the course of 45 days, tumor development was observed and measured. 
-                The purpose of this study was to compare the performance of Pymaceuticals' drug of interest, 
-                Capomulin, versus the other treatment regimens.</p>
+                <img id="img-subpg" src="assets/boxplots.png">
+                <p>Majority of the mice treated with Capomulin and Ramicane had a smaller tumor size which was around 38 - 45 mm3.
+                The potential outliers of these two drugs indicate that some of the mice had much smaller tumor size. 
+                The boxplot indicates that the mice trated with Infubinol and Ceftamin had the tumor size bigger. 
+                The volumes are much higher than the higher tumor volumes for those treated with Capomulin and Ramicare.</p>
         </div>
 
         <div class="col-lg-5" id="right-box">
@@ -101,8 +62,8 @@
                     <h2>Visualizations</h2>
                     <hr>
                     <a href="treatments.html"><img class="img-visual" src="assets/bar_chart.png"></a>
-                    <a href="capomulin.html"><img class="img-visual" src="assets/scatterplot.png"></a>
-                    <a href="tvolume.html"><img class="img-visual" src="assets/capomulin.png"></a>
+                    <a href="capomulin.html"><img class="img-visual" src="assets/capomulin.png"></a>
+                    <a href="tvolume.html"><img class="img-visual" src="assets/scatterplot.png"></a>
                     <a href="boxplots.html"><img class="img-visual" src="assets/boxplots.png"></a>
                 </div>
             <!-- </div>             -->
