@@ -1,0 +1,135 @@
+<!-- =========================================================================================== -->
+<!--                                   LANDING PAGE                                              -->
+<!-- =========================================================================================== -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>Mouse Study Visualization</title>
+    </head>
+    <body>
+
+<!-- =========================================================================================== -->
+<!--                                   MENU BAR                                                  -->
+<!-- =========================================================================================== -->
+<!-- <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <a class="navbar-brand" href="index.html" id="homebtn">Latitude</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Plots
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="temperature.html">Max Temperature</a>
+                <a class="dropdown-item" href="humidity.html">Humidity</a>
+                <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+            </div>
+          </li>  
+        <li class="nav-item">
+            <a class="nav-link" href="comparison.html">Comparison</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="city_data.html">Data</a>
+        </li>
+      </ul>
+    </div>
+  </nav> -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html" id="homebtn">Mouse Study</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarColor02">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="treatments.html">Treatments</a>
+                    <a class="dropdown-item" href="capomulin.html">Caponulin Treatment</a>
+                    <a class="dropdown-item" href="tvolume.html">Weight vs Volume</a>
+                    <a class="dropdown-item" href="boxplots.html">Box Plots</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Data</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="mouse_data.html">Mouse Info</a>
+                    <a class="dropdown-item" href="study_data.html">Tumor Study</a>
+                </div>
+            </li>  
+            <li class="nav-item">
+                <a class="nav-link" href="comparison.html">Analysis Summary</a>
+            </li>
+        </ul>
+    </div>
+  </nav>
+  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+
+<div class="container" id="index-container">
+    <div class="row"  id="setup-row">
+        <div class="col-lg-7" class="left-box" id="main-box">
+                <h1>Animal Study</h1>
+                <hr><br>
+                <img id="img-landpg" src="assets/bar_chart.png">                
+                <p>Pymaceuticals Inc., is a burgeoning pharmaceutical company based out of San Diego. 
+                Pymaceuticals specializes in anti-cancer pharmaceuticals. In its most recent efforts, 
+                it began screening for potential treatments for squamous cell carcinoma (SCC), a 
+                commonly occurring form of skin cancer.</p>
+                <p>This project is an analysis based on the complete data from their most recent animal study. 
+                In this study, 249 mice identified with SCC tumor growth 
+                were treated through a variety of 
+                drug regimens. Over the course of 45 days, tumor development was observed and measured. 
+                The purpose of this study was to compare the performance of Pymaceuticals' drug of interest, 
+                Capomulin, versus the other treatment regimens.</p>
+        </div>
+
+        <div class="col-lg-5" id="right-box">
+            <!-- <div class="col-md-12" id="side-box"> -->
+                <div id="side-box">
+                    <h2>Visualizations</h2>
+                    <hr>
+                    <a href="treatments.html"><img class="img-visual" src="assets/bar_chart.png"></a>
+                    <a href="capomulin.html"><img class="img-visual" src="assets/scatterplot.png"></a>
+                    <a href="tvolume.html"><img class="img-visual" src="assets/capomulin.png"></a>
+                    <a href="boxplots.html"><img class="img-visual" src="assets/boxplots.png"></a>
+                </div>
+            <!-- </div>             -->
+        </div>
+    </div>
+
+    <!-- ============   Blank Rows  ===========================================-->
+    <div class="row"  id="setup-row">
+        <div class="col-md-12 p-2">
+        </div>
+    </div>
+</div>
+
+    <!-- =========================================================================== -->
+    <!--                                FOOTER                                       -->
+    <!-- =========================================================================== -->
+    <div class="footer">
+        <div class="col-md-12" id="greenbar">
+        </div>
+            <span id="foot-note">Copyright: Data Visualization Bootcamp 2020</span>
+    </div>
+    
+    <!-- ======================   Import Bootstrap Javascript   ============================================================ -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- =================================================================================================================== -->
+    </body>
+
+</html>
